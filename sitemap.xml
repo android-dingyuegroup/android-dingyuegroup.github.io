@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
+    <loc>http://yoursite.com/2018/09/03/hello-world/</loc>
     
-    <lastmod>2018-10-31T09:40:03.885Z</lastmod>
+    <lastmod>2018-10-31T10:49:55.078Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/10/29/hello-world/</loc>
+    <loc>http://yoursite.com/2018/09/03/new-api-in-gradle-3-0-and-support-library-27-1-0/</loc>
     
-    <lastmod>2018-10-31T08:58:14.081Z</lastmod>
+    <lastmod>2018-10-31T10:47:44.013Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2018-10-31T09:40:03.885Z</lastmod>
     
   </url>
   
