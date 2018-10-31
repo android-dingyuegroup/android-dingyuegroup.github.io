@@ -23,7 +23,7 @@
 <meta property="og:description" content="Google 又双叒升级了 Android 的开发库，我们将根目录下的 build:gradle 版本由原先的 2.3.3 升级至 3.1.2，随之带来的问题是 Support Library 也需要升级。升级之后，gradle 脚本以及 support 包下相关类的 Api 发生了重大的改动。具体需要注意的改动如下：">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://www.superbed.cn/pic/5bd97ee19dc6d6216adec667">
-<meta property="og:updated_time" content="2018-10-31T10:47:44.013Z">
+<meta property="og:updated_time" content="2018-10-31T10:57:00.490Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="build:gradle 3.0 以及 Support Library 27.1.0 带来的 Api 变动">
 <meta name="twitter:description" content="Google 又双叒升级了 Android 的开发库，我们将根目录下的 build:gradle 版本由原先的 2.3.3 升级至 3.1.2，随之带来的问题是 Support Library 也需要升级。升级之后，gradle 脚本以及 support 包下相关类的 Api 发生了重大的改动。具体需要注意的改动如下：">
@@ -127,7 +127,7 @@
         <span class="column is-narrow">
             
             
-            3 分钟 读完 (约 492 字)
+            3 分钟 读完 (约 495 字)
         </span>
         
     </div>
@@ -144,6 +144,7 @@
 <p><strong>如何更好的兼容之前的代码？</strong>直接加 <code>!!</code> 处理是没有问题的，如果你觉得这样写过于丑陋并且看起来十分危险，可以用 <code>activity ? : return</code> 这样的写法代替，或者更好的方式是使用 <strong>Google</strong> 新提供的方法：</p>
 <figure class="highlight kotlin hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">requireActivity()</span><br><span class="line">requireContext()</span><br></pre></td></tr></table></figure>
 <p>这两个方法的返回值是不为 <code>null</code> 的，内部作了判空抛异常处理。具体文档可看源码或这里：<a href="https://developer.android.com/topic/libraries/support-library/revisions#27-1-0" target="_blank" rel="noopener">https://developer.android.com/topic/libraries/support-library/revisions#27-1-0</a></p>
+<p>以上。</p>
 
     
     </div>
