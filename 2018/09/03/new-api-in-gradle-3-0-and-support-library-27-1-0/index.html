@@ -14,19 +14,19 @@
 
 
 
-    <meta name="description" content="Google 又双叒升级了 Android 的开发库，我们将根目录下的 build:gradle 版本由原先的 2.3.3 升级至 3.1.2，随之带来的问题是 Support Library 也需要升级。升级之后，gradle 脚本以及 support 包下相关类的 Api 发生了重大的改动。具体需要注意的改动如下：">
+    <meta name="description" content="Google 又双叒升级了 Android 的开发库，我们将根目录下的 build:gradle 版本由原先的 2.3.3 升级至 3.1.2，随之带来的问题是 Support Library 也需要升级。升级之后，gradle 脚本以及 support 包下相关类的 Api 发生了重大的改动。具体需要注意的改动如下：">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="build:gradle 3.0 以及 Support Library 27.1.0 带来的 Api 变动">
 <meta property="og:url" content="http://yoursite.com/2018/09/03/new-api-in-gradle-3-0-and-support-library-27-1-0/index.html">
 <meta property="og:site_name" content="鼎阅Android团队">
-<meta property="og:description" content="Google 又双叒升级了 Android 的开发库，我们将根目录下的 build:gradle 版本由原先的 2.3.3 升级至 3.1.2，随之带来的问题是 Support Library 也需要升级。升级之后，gradle 脚本以及 support 包下相关类的 Api 发生了重大的改动。具体需要注意的改动如下：">
+<meta property="og:description" content="Google 又双叒升级了 Android 的开发库，我们将根目录下的 build:gradle 版本由原先的 2.3.3 升级至 3.1.2，随之带来的问题是 Support Library 也需要升级。升级之后，gradle 脚本以及 support 包下相关类的 Api 发生了重大的改动。具体需要注意的改动如下：">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://www.superbed.cn/pic/5bd97ee19dc6d6216adec667">
-<meta property="og:updated_time" content="2018-10-31T10:57:00.490Z">
+<meta property="og:updated_time" content="2018-11-01T01:37:29.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="build:gradle 3.0 以及 Support Library 27.1.0 带来的 Api 变动">
-<meta name="twitter:description" content="Google 又双叒升级了 Android 的开发库，我们将根目录下的 build:gradle 版本由原先的 2.3.3 升级至 3.1.2，随之带来的问题是 Support Library 也需要升级。升级之后，gradle 脚本以及 support 包下相关类的 Api 发生了重大的改动。具体需要注意的改动如下：">
+<meta name="twitter:description" content="Google 又双叒升级了 Android 的开发库，我们将根目录下的 build:gradle 版本由原先的 2.3.3 升级至 3.1.2，随之带来的问题是 Support Library 也需要升级。升级之后，gradle 脚本以及 support 包下相关类的 Api 发生了重大的改动。具体需要注意的改动如下：">
 <meta name="twitter:image" content="https://www.superbed.cn/pic/5bd97ee19dc6d6216adec667">
 
 
@@ -133,7 +133,7 @@
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <p><strong>Google</strong> 又双叒升级了 Android 的开发库，我们将根目录下的 <code>build:gradle</code> 版本由原先的 <code>2.3.3</code> 升级至 <code>3.1.2</code>，随之带来的问题是 <code>Support Library</code> 也需要升级。升级之后，<code>gradle</code> 脚本以及 <code>support</code> 包下相关类的 <strong>Api</strong> 发生了重大的改动。具体需要注意的改动如下：<br><a id="more"></a></p>
+        <p><strong>Google</strong> 又双叒升级了 Android 的开发库，我们将根目录下的 <code>build:gradle</code> 版本由原先的 <code>2.3.3</code> 升级至 <code>3.1.2</code>，随之带来的问题是 <code>Support Library</code> 也需要升级。升级之后，<code>gradle</code> 脚本以及 <code>support</code> 包下相关类的 <strong>Api</strong> 发生了重大的改动。具体需要注意的改动如下：<br><a id="more"></a></p>
 <h3 id="build-gradle-文件"><a href="#build-gradle-文件" class="headerlink" title="build.gradle 文件"></a>build.gradle 文件</h3><p>引入依赖的方式由原来的 <code>compile</code> 变更为现在的 <code>implementation</code> 和 <code>api</code> 关键字，这两个关键字的区别在于是否能传递依赖，例如：<br><br><img src="https://www.superbed.cn/pic/5bd97ee19dc6d6216adec667" style="width:400px;" align="center"></p>
 <blockquote>
 <p>注意：使用旧的关键字 <code>compile</code> 进行依赖应用并不会报错，只会报警告。使用 <code>implementation</code> 可以提升编译速度。</p>
