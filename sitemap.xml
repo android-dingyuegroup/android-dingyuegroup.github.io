@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2018/09/03/new-api-in-gradle-3-0-and-support-library-27-1-0/</loc>
+    <loc>http://yoursite.com/2019/02/23/best-practice-in-rxjava-network-method/</loc>
     
-    <lastmod>2018-11-03T02:12:59.000Z</lastmod>
+    <lastmod>2019-02-25T01:15:59.108Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2018/09/03/hello-world/</loc>
     
-    <lastmod>2018-10-31T10:49:55.078Z</lastmod>
+    <lastmod>2019-01-27T11:36:12.958Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/09/03/new-api-in-gradle-3-0-and-support-library-27-1-0/</loc>
+    
+    <lastmod>2019-01-27T11:35:54.708Z</lastmod>
     
   </url>
   
